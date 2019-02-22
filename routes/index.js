@@ -24,7 +24,7 @@ router.get("/keepalive", (err, res, req) => {
   });
 });
 
-router.get("/downloadResources", (err, res, req) => {
+router.get("/downloadresources", (err, res, req) => {
   const options = {
     url: `https://www.frontiersin.org/research-topics/6015/articles?index=1&sortby=date&pagesize=12&isrecent=false`,
     json: true
@@ -138,7 +138,7 @@ router.get("/downloadResources", (err, res, req) => {
   });
 });
 
-router.get("/getAllArticles", (err, res, req) => {
+router.get("/getallarticles", (err, res, req) => {
   var result = 10,
     articles = [];
 
@@ -162,7 +162,7 @@ router.get("/getAllArticles", (err, res, req) => {
   });
 });
 
-router.get("/getDatabase", (err, res, req) => {
+router.get("/getdatabase", (err, res, req) => {
   var Database = [];
 
   Model.Database.find({}, (err, Data) => {
